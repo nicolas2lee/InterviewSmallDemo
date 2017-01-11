@@ -1,0 +1,6 @@
+tao/common/AbstractEntity.class
+tao/user/controller/UserController.class
+tao/user/service/UserService.class
+tao/user/dao/UserDao.class
+tao/user/object/User.class
+tao/Application.class
