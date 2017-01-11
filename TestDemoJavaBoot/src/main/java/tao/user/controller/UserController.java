@@ -1,5 +1,6 @@
 package tao.user.controller;
 
+import org.springframework.ui.Model;
 import tao.user.object.User;
 import tao.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,4 +22,16 @@ public class UserController {
     public List<User> getUserList(){
         return userService.getUserList();
     }
+
+    @RequestMapping("/find")
+    public List<User> getUserListWithCondition(){
+        return userService.getUserListWithCondition();
+    }
+/*
+    for rendering jsp file, @RestCOntroller should be changed into @Controller
+    @RequestMapping("/hello")
+    public String hello(Model model){
+        return "hello";
+    }
+    */
 }

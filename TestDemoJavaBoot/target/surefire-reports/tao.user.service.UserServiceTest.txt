@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: tao.user.service.UserServiceTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.04 sec <<< FAILURE! - in tao.user.service.UserServiceTest
-getUserList(tao.user.service.UserServiceTest)  Time elapsed: 0.038 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at tao.user.service.UserService.getUserList(UserService.java:21)
-	at tao.user.service.UserServiceTest.getUserList(UserServiceTest.java:28)
-

@@ -22,4 +22,10 @@ public class UserService {
         userDao.findAll().iterator().forEachRemaining(users::add);
         return users;
     }
+
+    public List<User> getUserListWithCondition() {
+        List<User> users = new ArrayList<User>();
+        userDao.findByAge(1).iterator().forEachRemaining(users::add);
+        return users;
+    }
 }
